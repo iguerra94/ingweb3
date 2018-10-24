@@ -1,0 +1,254 @@
+16-10-2018 16:35:38.280 a.edu.iua.ingweb3.Ingweb3Application.logStarting Starting Ingweb3Application on debian-ivang94 with PID 2986 (/home/ivang94/eclipse-workspace/ingweb3/target/classes started by ivang94 in /home/ivang94/eclipse-workspace/ingweb3)
+16-10-2018 16:35:38.309 a.edu.iua.ingweb3.Ingweb3Application.logStarting Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+16-10-2018 16:35:38.315 a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo No active profile set, falling back to default profiles: default
+16-10-2018 16:35:39.068 a.edu.iua.ingweb3.Ingweb3Application.logStarting Starting Ingweb3Application on debian-ivang94 with PID 2985 (/home/ivang94/eclipse-workspace/ingweb3/target/classes started by ivang94 in /home/ivang94/eclipse-workspace/ingweb3)
+16-10-2018 16:35:39.073 a.edu.iua.ingweb3.Ingweb3Application.logStarting Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+16-10-2018 16:35:39.085 a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo No active profile set, falling back to default profiles: default
+16-10-2018 16:35:57.114 o.h.s.internal.StatisticsInitiator.initiateServiceInternal Statistics initialized [enabled=true]
+16-10-2018 16:35:59.462 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-10-2018 16:35:59.980 o.h.s.internal.StatisticsInitiator.initiateServiceInternal Statistics initialized [enabled=true]
+16-10-2018 16:36:01.884 a.edu.iua.ingweb3.Ingweb3Application.logStarted Started Ingweb3Application in 25.395 seconds (JVM running for 27.469)
+16-10-2018 16:36:01.888 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$a0839b65.run DataSource=HikariDataSource (HikariPool-1)
+16-10-2018 16:36:01.895 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$a0839b65.run Los archivos se subiran en: subidos
+16-10-2018 16:36:02.303 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-10-2018 16:36:03.822 o.s.b.d.a.OptionalLiveReloadServer.startServer Unable to start LiveReload server
+16-10-2018 16:36:04.080 o.a.catalina.core.StandardService.log Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at ar.edu.iua.ingweb3.Ingweb3Application.main(Ingweb3Application.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: La dirección ya se está usando
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 19 common frames omitted
+16-10-2018 16:36:04.184 o.s.b.d.LoggingFailureAnalysisReporter.report 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+16-10-2018 16:38:41.734 a.edu.iua.ingweb3.Ingweb3Application.logStarting Starting Ingweb3Application on debian-ivang94 with PID 3302 (/home/ivang94/eclipse-workspace/ingweb3/target/classes started by ivang94 in /home/ivang94/eclipse-workspace/ingweb3)
+16-10-2018 16:38:41.736 a.edu.iua.ingweb3.Ingweb3Application.logStarting Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+16-10-2018 16:38:41.740 a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo No active profile set, falling back to default profiles: default
+16-10-2018 16:38:49.498 o.h.s.internal.StatisticsInitiator.initiateServiceInternal Statistics initialized [enabled=true]
+16-10-2018 16:38:50.697 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-10-2018 16:38:51.579 a.edu.iua.ingweb3.Ingweb3Application.logStarted Started Ingweb3Application in 10.383 seconds (JVM running for 11.119)
+16-10-2018 16:38:51.584 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$6d571da4.run DataSource=HikariDataSource (HikariPool-1)
+16-10-2018 16:38:51.585 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$6d571da4.run Los archivos se subiran en: subidos
+16-10-2018 16:39:31.256 org.hibernate.SQL.logStatement 
+    select
+        producto0_.producto_id as producto1_1_,
+        producto0_.descripcion as descripc2_1_,
+        producto0_.en_stock as en_stock3_1_,
+        producto0_.precio as precio4_1_,
+        producto0_.vencimiento as vencimie5_1_ 
+    from
+        producto producto0_
+16-10-2018 16:39:31.294 o.h.s.i.ConcurrentStatisticsImpl.queryExecuted HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 43ms, rows: 0
+16-10-2018 16:43:44.051 org.hibernate.SQL.logStatement 
+    select
+        producto0_.producto_id as producto1_1_,
+        producto0_.descripcion as descripc2_1_,
+        producto0_.en_stock as en_stock3_1_,
+        producto0_.precio as precio4_1_,
+        producto0_.vencimiento as vencimie5_1_ 
+    from
+        producto producto0_
+16-10-2018 16:43:44.055 o.h.s.i.ConcurrentStatisticsImpl.queryExecuted HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 4ms, rows: 0
+16-10-2018 16:46:00.691 org.hibernate.SQL.logStatement 
+    select
+        producto0_.producto_id as producto1_1_,
+        producto0_.descripcion as descripc2_1_,
+        producto0_.en_stock as en_stock3_1_,
+        producto0_.precio as precio4_1_,
+        producto0_.vencimiento as vencimie5_1_ 
+    from
+        producto producto0_
+16-10-2018 16:46:00.693 o.h.s.i.ConcurrentStatisticsImpl.queryExecuted HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 1ms, rows: 0
+16-10-2018 16:50:04.347 org.hibernate.SQL.logStatement 
+    insert 
+    into
+        producto
+        (descripcion, en_stock, precio, vencimiento) 
+    values
+        (?, ?, ?, ?)
+16-10-2018 16:50:19.044 org.hibernate.SQL.logStatement 
+    select
+        producto0_.producto_id as producto1_1_,
+        producto0_.descripcion as descripc2_1_,
+        producto0_.en_stock as en_stock3_1_,
+        producto0_.precio as precio4_1_,
+        producto0_.vencimiento as vencimie5_1_ 
+    from
+        producto producto0_
+16-10-2018 16:50:19.070 o.h.s.i.ConcurrentStatisticsImpl.queryExecuted HHH000117: HQL: select generatedAlias0 from Producto as generatedAlias0, time: 25ms, rows: 1
+16-10-2018 16:50:19.084 org.hibernate.SQL.logStatement 
+    select
+        rubros0_.producto_id as producto1_2_0_,
+        rubros0_.rubro_id as rubro_id2_2_0_,
+        rubro1_.rubro_id as rubro_id1_3_1_,
+        rubro1_.descripcion as descripc2_3_1_ 
+    from
+        producto_rubro rubros0_ 
+    inner join
+        rubro rubro1_ 
+            on rubros0_.rubro_id=rubro1_.rubro_id 
+    where
+        rubros0_.producto_id=?
+16-10-2018 17:20:30.911 a.edu.iua.ingweb3.Ingweb3Application.logStarting Starting Ingweb3Application on debian-ivang94 with PID 5188 (/home/ivang94/eclipse-workspace/ingweb3/target/classes started by ivang94 in /home/ivang94/eclipse-workspace/ingweb3)
+16-10-2018 17:20:30.913 a.edu.iua.ingweb3.Ingweb3Application.logStarting Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+16-10-2018 17:20:30.915 a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo No active profile set, falling back to default profiles: default
+16-10-2018 17:20:39.111 o.h.s.internal.StatisticsInitiator.initiateServiceInternal Statistics initialized [enabled=true]
+16-10-2018 17:20:40.229 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-10-2018 17:20:42.712 a.edu.iua.ingweb3.Ingweb3Application.logStarted Started Ingweb3Application in 12.303 seconds (JVM running for 13.022)
+16-10-2018 17:20:42.717 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5a59802f.run DataSource=HikariDataSource (HikariPool-1)
+16-10-2018 17:20:42.718 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$5a59802f.run Los archivos se subiran en: subidos
+16-10-2018 17:27:22.612 a.edu.iua.ingweb3.Ingweb3Application.logStarting Starting Ingweb3Application on debian-ivang94 with PID 5188 (/home/ivang94/eclipse-workspace/ingweb3/target/classes started by ivang94 in /home/ivang94/eclipse-workspace/ingweb3)
+16-10-2018 17:27:22.612 a.edu.iua.ingweb3.Ingweb3Application.logStarting Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+16-10-2018 17:27:22.613 a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo No active profile set, falling back to default profiles: default
+16-10-2018 17:27:24.796 o.h.s.internal.StatisticsInitiator.initiateServiceInternal Statistics initialized [enabled=true]
+16-10-2018 17:27:25.207 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-10-2018 17:27:33.210 a.edu.iua.ingweb3.Ingweb3Application.logStarting Starting Ingweb3Application on debian-ivang94 with PID 5503 (/home/ivang94/eclipse-workspace/ingweb3/target/classes started by ivang94 in /home/ivang94/eclipse-workspace/ingweb3)
+16-10-2018 17:27:33.212 a.edu.iua.ingweb3.Ingweb3Application.logStarting Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+16-10-2018 17:27:33.215 a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo No active profile set, falling back to default profiles: default
+16-10-2018 17:27:41.568 o.h.s.internal.StatisticsInitiator.initiateServiceInternal Statistics initialized [enabled=true]
+16-10-2018 17:27:42.798 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-10-2018 17:27:45.459 a.edu.iua.ingweb3.Ingweb3Application.logStarted Started Ingweb3Application in 12.756 seconds (JVM running for 13.485)
+16-10-2018 17:27:45.465 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$68343ff.run DataSource=HikariDataSource (HikariPool-1)
+16-10-2018 17:27:45.465 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$68343ff.run Los archivos se subiran en: subidos
+16-10-2018 17:34:26.644 a.edu.iua.ingweb3.Ingweb3Application.logStarting Starting Ingweb3Application on debian-ivang94 with PID 5760 (/home/ivang94/eclipse-workspace/ingweb3/target/classes started by ivang94 in /home/ivang94/eclipse-workspace/ingweb3)
+16-10-2018 17:34:26.646 a.edu.iua.ingweb3.Ingweb3Application.logStarting Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+16-10-2018 17:34:26.650 a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo No active profile set, falling back to default profiles: default
+16-10-2018 17:34:35.221 o.h.s.internal.StatisticsInitiator.initiateServiceInternal Statistics initialized [enabled=true]
+16-10-2018 17:34:36.295 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-10-2018 17:34:38.595 a.edu.iua.ingweb3.Ingweb3Application.logStarted Started Ingweb3Application in 12.405 seconds (JVM running for 13.009)
+16-10-2018 17:34:38.634 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$15079b4f.run DataSource=HikariDataSource (HikariPool-1)
+16-10-2018 17:34:38.634 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$15079b4f.run Los archivos se subiran en: subidos
+16-10-2018 17:52:49.546 a.edu.iua.ingweb3.Ingweb3Application.logStarting Starting Ingweb3Application on debian-ivang94 with PID 7181 (/home/ivang94/eclipse-workspace/ingweb3/target/classes started by ivang94 in /home/ivang94/eclipse-workspace/ingweb3)
+16-10-2018 17:52:49.683 a.edu.iua.ingweb3.Ingweb3Application.logStarting Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+16-10-2018 17:52:49.686 a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo No active profile set, falling back to default profiles: default
+16-10-2018 17:53:04.939 o.h.s.internal.StatisticsInitiator.initiateServiceInternal Statistics initialized [enabled=true]
+16-10-2018 17:53:06.871 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-10-2018 17:53:10.015 a.edu.iua.ingweb3.Ingweb3Application.logStarted Started Ingweb3Application in 22.96 seconds (JVM running for 27.457)
+16-10-2018 17:53:10.020 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$4215838f.run DataSource=HikariDataSource (HikariPool-1)
+16-10-2018 17:53:10.020 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$4215838f.run Los archivos se subiran en: subidos
+16-10-2018 17:57:30.454 a.edu.iua.ingweb3.Ingweb3Application.logStarting Starting Ingweb3Application on debian-ivang94 with PID 7463 (/home/ivang94/eclipse-workspace/ingweb3/target/classes started by ivang94 in /home/ivang94/eclipse-workspace/ingweb3)
+16-10-2018 17:57:30.456 a.edu.iua.ingweb3.Ingweb3Application.logStarting Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+16-10-2018 17:57:30.460 a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo No active profile set, falling back to default profiles: default
+16-10-2018 17:57:39.051 o.h.s.internal.StatisticsInitiator.initiateServiceInternal Statistics initialized [enabled=true]
+16-10-2018 17:57:40.464 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-10-2018 17:57:43.091 a.edu.iua.ingweb3.Ingweb3Application.logStarted Started Ingweb3Application in 13.145 seconds (JVM running for 13.72)
+16-10-2018 17:57:43.097 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$e7320157.run DataSource=HikariDataSource (HikariPool-1)
+16-10-2018 17:57:43.098 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$e7320157.run Los archivos se subiran en: subidos
+16-10-2018 18:00:02.035 a.edu.iua.ingweb3.Ingweb3Application.logStarting Starting Ingweb3Application on debian-ivang94 with PID 7822 (/home/ivang94/eclipse-workspace/ingweb3/target/classes started by ivang94 in /home/ivang94/eclipse-workspace/ingweb3)
+16-10-2018 18:00:02.038 a.edu.iua.ingweb3.Ingweb3Application.logStarting Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+16-10-2018 18:00:02.042 a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo No active profile set, falling back to default profiles: default
+16-10-2018 18:00:10.840 o.h.s.internal.StatisticsInitiator.initiateServiceInternal Statistics initialized [enabled=true]
+16-10-2018 18:00:12.022 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-10-2018 18:00:14.363 a.edu.iua.ingweb3.Ingweb3Application.logStarted Started Ingweb3Application in 12.821 seconds (JVM running for 13.404)
+16-10-2018 18:00:14.367 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$6b194afe.run DataSource=HikariDataSource (HikariPool-1)
+16-10-2018 18:00:14.368 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$6b194afe.run Los archivos se subiran en: subidos
+23-10-2018 16:17:19.780 a.edu.iua.ingweb3.Ingweb3Application.logStarting Starting Ingweb3Application on ivang94-N56VB with PID 11913 (/home/ivang94/Escritorio/BACKUP/eclipse-workspace/ingweb3/target/classes started by ivang94 in /home/ivang94/Escritorio/BACKUP/eclipse-workspace/ingweb3)
+23-10-2018 16:17:19.799 a.edu.iua.ingweb3.Ingweb3Application.logStarting Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+23-10-2018 16:17:19.802 a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo No active profile set, falling back to default profiles: default
+23-10-2018 16:17:26.973 o.h.s.internal.StatisticsInitiator.initiateServiceInternal Statistics initialized [enabled=true]
+23-10-2018 16:17:28.039 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23-10-2018 16:17:30.601 a.edu.iua.ingweb3.Ingweb3Application.logStarted Started Ingweb3Application in 11.634 seconds (JVM running for 12.363)
+23-10-2018 16:17:30.609 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$4bc2a09c.run DataSource=HikariDataSource (HikariPool-1)
+23-10-2018 16:17:30.609 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$4bc2a09c.run Los archivos se subiran en: subidos
+23-10-2018 16:17:43.074 org.hibernate.SQL.logStatement 
+    select
+        archivo0_.id as id1_0_,
+        archivo0_.contenido as contenid2_0_,
+        archivo0_.length as length3_0_,
+        archivo0_.mime as mime4_0_,
+        archivo0_.nombre as nombre5_0_ 
+    from
+        archivo archivo0_
+23-10-2018 16:17:43.131 o.h.s.i.ConcurrentStatisticsImpl.queryExecuted HHH000117: HQL: select generatedAlias0 from Archivo as generatedAlias0, time: 62ms, rows: 3
+23-10-2018 16:20:22.520 org.hibernate.SQL.logStatement 
+    select
+        archivo0_.id as id1_0_0_,
+        archivo0_.contenido as contenid2_0_0_,
+        archivo0_.length as length3_0_0_,
+        archivo0_.mime as mime4_0_0_,
+        archivo0_.nombre as nombre5_0_0_ 
+    from
+        archivo archivo0_ 
+    where
+        archivo0_.id=?
+23-10-2018 16:20:54.407 a.edu.iua.ingweb3.Ingweb3Application.logStarting Starting Ingweb3Application on ivang94-N56VB with PID 12019 (/home/ivang94/Escritorio/BACKUP/eclipse-workspace/ingweb3/target/classes started by ivang94 in /home/ivang94/Escritorio/BACKUP/eclipse-workspace/ingweb3)
+23-10-2018 16:20:54.410 a.edu.iua.ingweb3.Ingweb3Application.logStarting Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+23-10-2018 16:20:54.421 a.edu.iua.ingweb3.Ingweb3Application.logStartupProfileInfo No active profile set, falling back to default profiles: default
+23-10-2018 16:21:02.276 o.h.s.internal.StatisticsInitiator.initiateServiceInternal Statistics initialized [enabled=true]
+23-10-2018 16:21:03.399 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23-10-2018 16:21:05.455 a.edu.iua.ingweb3.Ingweb3Application.logStarted Started Ingweb3Application in 11.521 seconds (JVM running for 12.037)
+23-10-2018 16:21:05.461 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$d9ca041d.run DataSource=HikariDataSource (HikariPool-1)
+23-10-2018 16:21:05.462 a.e.i.i.Ingweb3Application$$EnhancerBySpringCGLIB$$d9ca041d.run Los archivos se subiran en: subidos
+23-10-2018 16:23:13.892 o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException Resolved exception caused by Handler execution: org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'file' is not present
+23-10-2018 16:23:55.909 org.hibernate.SQL.logStatement 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence for update
+            
+23-10-2018 16:23:55.930 org.hibernate.SQL.logStatement 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+23-10-2018 16:23:56.112 org.hibernate.SQL.logStatement 
+    insert 
+    into
+        archivo
+        (contenido, length, mime, nombre, id) 
+    values
+        (?, ?, ?, ?, ?)
+23-10-2018 16:24:07.895 org.hibernate.SQL.logStatement 
+    select
+        archivo0_.id as id1_0_0_,
+        archivo0_.contenido as contenid2_0_0_,
+        archivo0_.length as length3_0_0_,
+        archivo0_.mime as mime4_0_0_,
+        archivo0_.nombre as nombre5_0_0_ 
+    from
+        archivo archivo0_ 
+    where
+        archivo0_.id=?
